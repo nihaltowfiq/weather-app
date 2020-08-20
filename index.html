@@ -15,6 +15,12 @@
             background-size: cover;
             height: 100vh;
         }
+        .my-name{
+            background-color: #dc3545;
+            padding: 3px;
+            border-radius: 5px;
+            font-size: 15px;
+        }
     </style>
 </head>
 
@@ -22,23 +28,23 @@
     <div class="container">
         <form class="col-md-6 m-auto py-5">
             <div class="input-group mb-3">
-                <input id="enter-city" type="text" class="form-control" placeholder="Enter a location for Weather ...">
+                <input id="input-city" type="text" class="form-control" placeholder="Enter a location for Weather ...">
                 <div class="input-group-append">
-                    <button type="button" class="btn btn-danger">Search</button>
+                    <button id="search-btn" type="button" class="btn btn-danger">Search</button>
                 </div>
             </div>
         </form>
         <div class="weather-status text-white text-center">
             <img id="icon" src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
             <h1 id="city-name">Rajshahi</h1>
-            <h3><span id="temperature">38.06</span>&deg;C</h3>
-            <h1 class="lead" id="weather-condition">Clouds</h1>
+            <h3><span id="temp">38.06</span>&deg;C</h3>
+            <h1 class="lead">Clouds</h1>
             <br>
-            <p>developed by Nihal Towfiq</p>
+            <small>developed by <span class="my-name font-weight-bold font-italic">Nihal Towfiq</span></small>
         </div>
     </div>
 
-    <script src="main.js"></script>
+    <script src="app.js"></script>
 
 </body>
 
