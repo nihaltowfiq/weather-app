@@ -1,11 +1,12 @@
-//my 2 api key acount username is : nihaltowfiq and towfiqnihal.
+/* my 2 api key acount username is : nihaltowfiq & api key: 83d2ec24fa72d082bcd15463e48273b4;
+                                    and towfiqnihal & api key: f997433ea9afaaf321a42960718d3c44 */
 
 document.getElementById('search-btn').addEventListener('click', () => {
     const enterCity = document.getElementById('input-city').value;
     getCityName(enterCity);
 })
 const getCityName = cityName => {
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=83d2ec24fa72d082bcd15463e48273b4`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=f997433ea9afaaf321a42960718d3c44`)
         .then(res => res.json())
         .then(data => {
             updateUI(data)
