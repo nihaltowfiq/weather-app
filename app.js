@@ -5,7 +5,7 @@ document.getElementById('search-btn').addEventListener('click', () => {
     getCityName(enterCity);
 })
 const getCityName = cityName => {
-    fetch(`https:/api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=83d2ec24fa72d082bcd15463e48273b4`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=83d2ec24fa72d082bcd15463e48273b4`)
         .then(res => res.json())
         .then(data => {
             updateUI(data)
